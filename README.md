@@ -11,6 +11,24 @@ Repository: https://github.com/piyush2004parate/Resume-Builder
 - Print-friendly styles for PDF export using browser print or print-to-PDF
 - Optional Python backend for advanced export (if present in the repo)
 
+## Screenshots
+
+Below are screenshots showing the app UI and a sample generated resume. The images for the screenshots live in the repository at `static/img`. If you prefer the images to live under a different path, update the `src` values below accordingly.
+
+- Landing / Get Started view  
+<img src="static/img/HomePage.png" alt="Landing page with Get Started button" width="100%">
+
+- Landing / action buttons  
+<img src="static/img/OnlineResumeGenerator.png" alt="Landing page with action buttons (Create / View / Edit / Download)" width="100%">
+
+- Sections list with Edit / View / Delete actions  
+<img src="static/img/EditResumePage.png" alt="Table listing profile sections with Edit, View and Delete buttons" width="80%">
+
+- Generated resume / PDF preview  
+<img src="static/img/Resume.png" alt="Generated resume PDF preview" width="65%">
+
+(If your image filenames differ, rename them or update the paths above. The UI screenshots you provided were numbered 1–4; I used screenshot-1.png .. screenshot-4.png as the filenames.)
+
 ## Tech stack
 
 - CSS (primary) — styling and responsive layout
@@ -44,14 +62,25 @@ There are two common ways to run the project locally:
      pip install -r requirements.txt
      python app.py
      ```
-   - Follow the backend README or console output for routes and usage.
 
-## How to use
+## How to add or update screenshots
 
-- Open the builder in your browser (index.html or served URL).
-- Fill in the form fields: personal details, summary, experience, education, skills.
-- Use the preview pane to see formatting in real-time.
-- To export to PDF, use your browser’s Print dialog (File → Print → Save as PDF). The project includes print-friendly CSS to improve PDF output.
+1. Place the four screenshots in the repository under `static/img/` and name them:
+   - `screenshot-1.png`
+   - `screenshot-2.png`
+   - `screenshot-3.png`
+   - `screenshot-4.png`
+
+   Example local steps:
+   ```bash
+   mkdir -p static/img
+   # copy or move your images into static/img and rename them accordingly
+   git add static/img/screenshot-*.png README.md
+   git commit -m "Add screenshots and update README"
+   git push
+   ```
+
+2. If you prefer to use a different filename or directory, edit the `src` attributes in the "Screenshots" section above to match.
 
 ## Customization
 
@@ -91,8 +120,6 @@ Copyright (c) 2025 piyush2004parate
 ## Acknowledgements
 
 Thanks for checking out Resume-Builder. If you have suggestions (UI improvements, templates, export features), open an issue or submit a PR.
-
----
 
 Maintainers / Contact
 - Owner: piyush2004parate
