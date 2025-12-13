@@ -27,7 +27,6 @@ Below are screenshots showing the app UI and a sample generated resume. The imag
 - Generated resume / PDF preview  
 <img src="static/img/Resume.png" alt="Generated resume PDF preview" width="65%">
 
-(If your image filenames differ, rename them or update the paths above. The UI screenshots you provided were numbered 1–4; I used screenshot-1.png .. screenshot-4.png as the filenames.)
 
 ## Tech stack
 
@@ -62,47 +61,6 @@ There are two common ways to run the project locally:
      pip install -r requirements.txt
      python app.py
      ```
-
-## How to add or update screenshots
-
-1. Place the four screenshots in the repository under `static/img/` and name them:
-   - `screenshot-1.png`
-   - `screenshot-2.png`
-   - `screenshot-3.png`
-   - `screenshot-4.png`
-
-   Example local steps:
-   ```bash
-   mkdir -p static/img
-   # copy or move your images into static/img and rename them accordingly
-   git add static/img/screenshot-*.png README.md
-   git commit -m "Add screenshots and update README"
-   git push
-   ```
-
-2. If you prefer to use a different filename or directory, edit the `src` attributes in the "Screenshots" section above to match.
-
-## Customization
-
-- Modify styling in the CSS files (e.g., `styles.css`) to change fonts, colors, spacing, or layout.
-- Update HTML templates to add or remove sections.
-- Add more export options (e.g., server-side PDF generation) if you include or build a Python backend using libraries like WeasyPrint, wkhtmltopdf, ReportLab, or Playwright.
-
-## Accessibility & Printing tips
-
-- Use semantic HTML elements and accessible form labels for better screen reader support.
-- Test print layout with different browser print scales; adjust page-break rules in CSS for long sections.
-
-## Contributing
-
-Contributions are welcome. To contribute:
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feat/my-change`
-3. Make your changes and commit: `git commit -m "Add feature"`
-4. Push and open a Pull Request against the `main` branch.
-
-Please include screenshots or steps to reproduce if you open issues or PRs that change UI behavior.
 
 ## Issues & feature requests
 
